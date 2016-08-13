@@ -18,7 +18,7 @@
 
  Create MiniLoader 
 ``` 
-MiniLoader miniLoader  = new MiniLoader(ctx,this)
+MiniLoader miniLoader  = new MiniLoader(ctx,this);
 
 ```
 
