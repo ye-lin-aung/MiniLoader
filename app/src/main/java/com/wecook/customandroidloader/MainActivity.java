@@ -1,15 +1,14 @@
 package com.wecook.customandroidloader;
 
 import android.os.Bundle;
-import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import com.wecook.customloader.Callback;
 import com.wecook.customloader.MiniLoader;
+import com.wecook.customloader.MiniLoaderManager;
 
-public class MainActivity extends AppCompatActivity
-    implements LoaderManager.LoaderCallbacks<String>, Callback<String> {
+public class MainActivity extends AppCompatActivity implements MiniLoaderManager<String> {
+
   private MiniLoader miniLoader;
 
   @Override protected void onCreate(Bundle savedInstanceState) {

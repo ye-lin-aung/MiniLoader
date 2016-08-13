@@ -10,7 +10,7 @@ public class MiniLoader<T> extends AsyncTaskLoader<T> {
 
   private Callback<T> callback;
 
-  public MiniLoader(Context context, Callback<T> callback) {
+  public MiniLoader(Context context, MiniLoaderManager<T> callback) {
     super(context);
     this.callback = callback;
   }
