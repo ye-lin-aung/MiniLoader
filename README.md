@@ -15,6 +15,14 @@
 
 ### Usage 
  ---
+
+ Create MiniLoader 
+``` 
+MiniLoader miniLoader  = new MiniLoader(ctx,this)
+
+```
+
+
  Implements MiniLoaderManager
  ``` 
 
@@ -42,11 +50,6 @@ class MainActivity extends AppCompatActivity implements MiniLoaderManager<Produc
 
 );
 ``` 
-Create MiniLoader 
-``` 
-MiniLoader miniLoader  = new MiniLoader(ctx,this)
-
-```
 
 Init Now
 
