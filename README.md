@@ -4,9 +4,13 @@
 
 ## Simple Android Custom Loader
 
-![alt](http://link)
+![alt](https://github.com/ye-lin-aung/MiniLoader/blob/master/icon.png?raw=true)
 
 ## Download AAR
+
+<a href="https://raw.githubusercontent.com/ye-lin-aung/MKot/master/jars/MKot-1.1.2.jar" target="_blank"><img src="http://cognition.ouc.ac.cy/cclab/images/DownloadButton.png" alt="IMAGE ALT TEXT HERE" width="100" height="100"  />
+</a>
+
 
 
 ### Usage 
@@ -14,7 +18,7 @@
  Implements MiniLoaderManager
  ``` 
 
-    class Activity extends AppCompatActivity implements MiniLoaderManager<Product>{
+class MainActivity extends AppCompatActivity implements MiniLoaderManager<Product>{
 
 
     @Override public Loader<Product> onCreateLoader(int id, Bundle args) {
