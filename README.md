@@ -8,7 +8,7 @@
 
 ## Download AAR
 
-<a href="https://raw.githubusercontent.com/ye-lin-aung/MKot/master/jars/MKot-1.1.2.jar" target="_blank"><img src="http://cognition.ouc.ac.cy/cclab/images/DownloadButton.png" alt="IMAGE ALT TEXT HERE" width="100" height="100"  />
+<a href="https://github.com/ye-lin-aung/MiniLoader/blob/master/download/customloader-v1.0.0.aar?raw=true" target="_blank"><img src="http://cognition.ouc.ac.cy/cclab/images/DownloadButton.png" alt="IMAGE ALT TEXT HERE" width="100" height="100"  />
 </a>
 
 
