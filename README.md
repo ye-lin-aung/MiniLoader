@@ -17,14 +17,14 @@
  ---
 
  Create MiniLoader 
-``` 
+```java
 MiniLoader miniLoader  = new MiniLoader(ctx,this);
 
 ```
 
 
  Implements MiniLoaderManager
- ``` 
+ ```java 
 
 class MainActivity extends AppCompatActivity implements MiniLoaderManager<Product>{
 
@@ -41,19 +41,17 @@ class MainActivity extends AppCompatActivity implements MiniLoaderManager<Produc
     Log.d("Hey yo! ", data.getProductName());
   }
 
-  @Override public String loadInBackground() {
+  @Override public Product loadInBackground() {
     //Write custom Logic Here;
     return DataRepo.getProduct();
-  }
-
- } 
-
-);
+  });
+  
+}  
 ``` 
 
 Init Now
 
-``` 
+```java 
 getSupportLoaderManager().initLoader(1,null,this);
 ```
 
