@@ -29,7 +29,7 @@ MiniLoader miniLoader  = new MiniLoader(ctx,this);
 class MainActivity extends AppCompatActivity implements MiniLoaderManager<Product>{
 
 
-    @Override public Loader<Product> onCreateLoader(int id, Bundle args) {
+  @Override public Loader<Product> onCreateLoader(int id, Bundle args) {
     return miniLoader;
   }
 
