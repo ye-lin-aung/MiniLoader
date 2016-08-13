@@ -4,31 +4,54 @@
 
 ## Simple Android Custom Loader
 
-
 ![alt](http://link)
+
+## Download AAR
+
 
 ### Usage 
  ---
- Create your own MiniLoader
+ Implements MiniLoaderManager
  ``` 
-    //Create your own MiniLoader
 
-    MiniLoader mloader = new MiniLoader (this,new Callback<T>({
+    class Activity extends AppCompatActivity implements MiniLoaderManager<Product>{
 
-    @Override public T loadInBackground() {
-      
-    return T;
-  }
-);
-``` 
-Register in OnCreate of LoaderManager.LoaderCallback
-```
-@Override public Loader<T> onCreateLoader(int id, Bundle args) {
+
+    @Override public Loader<Product> onCreateLoader(int id, Bundle args) {
     return miniLoader;
   }
 
+  @Override public void onLoaderReset(Loader<Product> loader) {
+
+  }
+
+  @Override public void onLoadFinished(Loader<Product> loader, Product data) {
+    Log.d("Hey yo! ", data.getProductName());
+  }
+
+  @Override public String loadInBackground() {
+    //Write custom Logic Here;
+    return DataRepo.getProduct();
+  }
+
+ } 
+
+);
+``` 
+Create MiniLoader 
+``` 
+MiniLoader miniLoader  = new MiniLoader(ctx,this)
 
 ```
+
+Init Now
+
+``` 
+getSupportLoaderManager().initLoader(1,null,this);
+```
+
+
+
 
     
 
