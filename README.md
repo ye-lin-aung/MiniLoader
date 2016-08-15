@@ -2,7 +2,7 @@
 
 # MiniLoader
 
-## Simple Android Custom Loader
+## Simple Android Custom Loader (16 KB)
 
 ![alt](https://github.com/ye-lin-aung/MiniLoader/blob/master/icon.png?raw=true)
 

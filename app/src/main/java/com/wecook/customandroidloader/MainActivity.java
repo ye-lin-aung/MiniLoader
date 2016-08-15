@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements MiniLoaderManager
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     miniLoader = new MiniLoader<>(this, this);
+
     getSupportLoaderManager().initLoader(1, null, this);
   }
 
